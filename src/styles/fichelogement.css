@@ -1,0 +1,52 @@
+.logement{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+.logement-name h1{
+    font-size: 18px;
+}
+
+.logement-rate{
+    width: 150px;
+    height: auto;
+}
+.tag-rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+
+.host{
+    display: flex;
+    width: 100px;
+}
+.host img{
+    width: 50px;
+    height: 50px;
+    border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -ms-border-radius:30px;
+    -o-border-radius:30px;
+}
+
+.host p{
+    width: 60px;
+}
+
+
+
+.logement-caracteristique{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description{
+    width: 265px;
+}
+.equipements{
+    width: 265px;
+}

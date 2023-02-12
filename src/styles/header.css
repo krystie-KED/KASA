@@ -1,0 +1,15 @@
+.navigation-kasa{
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation-kasa img{
+    width: 105px;
+}
+.menu-navigation{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

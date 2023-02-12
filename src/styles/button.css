@@ -1,0 +1,14 @@
+.button{
+   width: 10%;
+   text-align: right;
+}
+button {
+    border: none;
+    background-color: transparent ;
+    width: 90%;
+}
+
+button img {
+    width: 30%;
+    text-align: right;
+}

@@ -1,0 +1,21 @@
+.error{
+    text-align: center;
+    font-weight: 500;
+}
+
+.error h1{
+    margin-top: 5%;
+    font-size: 144px;
+    font-weight: 700;
+}
+
+.error .error-message{
+    font-size: 18px;
+}
+
+.error .link-retour{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 9px;
+
+}

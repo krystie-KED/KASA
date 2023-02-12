@@ -1,0 +1,79 @@
+.caroussel-container{
+    width: 100%;
+    /*max-width: 80%;
+    */height: 200px;
+    margin-bottom: 5%;
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.caroussel {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.caroussel-item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+}
+
+.caroussel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.caroussel-btn {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    z-index: 2;
+    top: 50%;
+    cursor: pointer;
+}
+
+@media (width < 600px){
+    .caroussel-btn{
+        display: none;
+    }
+}
+
+.left-btn{
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    left: 20px;
+}
+
+.right-btn{
+    border-right: 4px solid white;
+    border-top: 4px solid white;
+    right: 20px;
+}
+
+
+::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}

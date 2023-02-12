@@ -1,0 +1,29 @@
+.thumb{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.thumb img{
+    width: 160px;
+    height: 160px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.thumb h3{
+    position: absolute;
+    width: 90%;
+    bottom: 10px;
+    left: 10px;
+    color: #FFFFFF;
+    font-size: 9px;
+}
