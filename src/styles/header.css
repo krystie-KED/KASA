@@ -13,3 +13,8 @@
     align-items: center;
     justify-content: space-between;
 }
+.selected{
+    text-decoration: underline;
+}
+.active{
+    border-bottom: 1px solid #FF6060;}

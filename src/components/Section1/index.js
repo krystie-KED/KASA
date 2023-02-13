@@ -1,5 +1,5 @@
 import React from 'react'
-import background from '../../assets/section1.svg'
+import background from '../../assets/background.png'
 import '../../styles/section1.css'
 
 const Section1 = () => {

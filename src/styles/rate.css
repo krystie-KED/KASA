@@ -2,4 +2,12 @@
     display: flex;
     width: 20%;
 }
-
+@media (width < 600px){
+    .star{
+        display: flex;
+        justify-content: end;
+        width: 12%;
+        margin-top: 6%;
+        margin-bottom: 4%;
+    }
+}

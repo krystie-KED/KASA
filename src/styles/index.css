@@ -1,3 +1,6 @@
+.font-link {
+  font-family: 'Montserrat', sans-serif;
+}
 *{
   margin: 0;
   padding: 0;
@@ -6,13 +9,22 @@
 }
 
 body {
+  position: relative;
+  min-height: 100vh;
   background-color: #E5E5E5;
+  font-size: 12px;
+  font-weight: 500;
   color: #FF6060;
-  width: 90%;
-  margin: auto;
+  width: 100%;
   font-family:'Montserrat',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.container{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
 }
 
 code {
@@ -20,6 +32,9 @@ code {
     monospace;
 }
 
-p{
-  font-size: 12px;
+@media (width < 600px){
+ #root{
+  max-height: 5000px;
+  min-height: 100vh;
+ }
 }

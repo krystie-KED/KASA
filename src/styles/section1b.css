@@ -32,26 +32,15 @@
     -o-border-radius: 15px;
 }
 
-.section1 h1{
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 24px;
-    font-weight: 500;
-    color: #FFFFFF;
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
-}
-
 
 @media (width < 600px){
-    .section1 h1{
-        text-align: left;
-        padding-left: 10px;
+    .imgsize{
+       margin-bottom: 35%; 
+    }
+    .imgsize .masque{
+        height: 200px;
+    }
+    .imgsize img{
+        height: 200px;
     }
 }

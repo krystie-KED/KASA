@@ -3,22 +3,23 @@ import '../../styles/dropDownLarge.css'
 import '../../styles/button.css'
 import arrow from '../../assets/arrow.svg'
 
-const Dropdownlarge = ({informations}) => {
+const Dropdownlarge = ({information}) => {
     const [isShown, setIsShown] = useState(false)
     const [isActive, setIsActive] = useState(false)
 
     const handleClick = (e) => {
-        e.stopPropagation();
+        e.stopPropagation()
         setIsShown(current => !current)
         setIsActive(current => !current)
     }
 
+
+
     return(
-        <div className="dropdownLarge-container">
-            {informations.map((info) => (
-                <div key={info.title} className="dropDownLarge">
+        
+                <div  className="dropDownLarge">
                     <div className="dropDownLargeContainer">
-                        <p>{info.title}</p>
+                        <p>{information.title}</p>
                         <div className="button">
                             <button className={isActive ? 'transform' : ''} onClick={handleClick}> 
                                 <img src={arrow} alt='arrow' />
@@ -28,12 +29,11 @@ const Dropdownlarge = ({informations}) => {
 
                     {isShown && (
                         <div className="description">
-                            <p>{info.description}</p>
+                            <p>{information.description}</p>
                         </div>
                     )}
                 </div>
-            ))}
-        </div>
+           
     )
 
 }

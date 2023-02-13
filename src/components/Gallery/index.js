@@ -4,9 +4,13 @@ import '../../styles/gallery.css'
 import styled from "styled-components";
 
 const StyledLink = styled(Link)`
-   width: 140px;
+   width: 200px;
    margin: 20px;
-
+   @media (width < 600px){
+    width : 100%;
+    margin : 0;
+    margin-bottom: 5%;
+   }
     `
 
 const Gallery = ({data}) => {   

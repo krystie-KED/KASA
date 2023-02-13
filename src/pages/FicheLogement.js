@@ -41,15 +41,15 @@ const FicheLogement = () => {
     <div className='fichelogement'>
         <div>        
             <Caroussel key={data.id} data={data}/>
-        </div>
+        </div> 
         <div className='logement'>
             <div className='logement-name'>
                 <h1>{data.title}</h1>
                 <p>{data.location}</p>
             </div>
             <div className='host'>
-                <p>{data.host.name}</p>
-                <img src={data.host.picture} alt="host" />
+                <p>{data?.host?.name}</p>
+                <img src={data?.host?.picture} alt="host" />
             </div>
         </div>
         <div className='tag-rate'>
@@ -61,7 +61,7 @@ const FicheLogement = () => {
             </div>
         </div>
         <div className="logement-caracteristique">
-            <div className='description'>
+            <div className='description'> 
             <Dropdown key={data.id} data={data} />
             </div>
             <div className='equipements'>

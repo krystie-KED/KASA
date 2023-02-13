@@ -23,3 +23,25 @@
     font-size: 10px;
 
 }
+
+@media (width < 600px){
+    .tag{
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    .tag p{
+        font-size: 9px;
+    }
+    .list-tag{
+        width: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    .tag-container{
+        width: 100px;
+        margin: 0 2% 2% 0;
+    }
+}

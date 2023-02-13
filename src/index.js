@@ -4,7 +4,6 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './styles/index.css'
 import Home from './pages/Home'
 import Apropos from './pages/Apropos'
-// import FicheLogement from './pages/FicheLogement'
 import  Error from './pages/Error'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -15,12 +14,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-    <Header />
+    <div className='container'>
+      <Header />
       <Routes>
        <Route exact path='/' element={<Home />} /> 
        <Route exact path='/apropos' element={<Apropos />} /> 
        <Route exact path='/fichelogement/:id' element={<FicheLogement />} />
+       <Route path='*' element={<Error />} />
       </Routes>
+      </div>
     <Footer />
     </Router> 
         

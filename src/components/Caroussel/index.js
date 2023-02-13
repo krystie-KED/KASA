@@ -37,7 +37,7 @@ const Carroussel = ({data}) => {
                 onClick={() => incrementCaroussel(1)}/>
 
             <div className="caroussel" ref={caroussel}>
-                {pictures.map((img, index) => (
+                {pictures?.map((img, index) => (
                     <div key={`${index}-${img}`} className="caroussel-item">
                         <img src={img} alt="logement" />
                     </div>

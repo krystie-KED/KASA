@@ -41,3 +41,15 @@
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
 } 
+
+@media (width < 600px){
+    .logement-caracteristique{
+        margin-top: 5%;
+    }
+    .dropdown{
+        width: 100%;
+    }
+    .equipements{
+        width: 100%;
+    }
+}

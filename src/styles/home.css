@@ -1,5 +1,18 @@
 .gallery{
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+@media (width < 600px){
+    .home{
+        height: 4600px;
+        min-height: 100vh;
+    }
+    .gallery{
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
 }

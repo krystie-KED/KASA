@@ -58,6 +58,10 @@
     .caroussel-btn{
         display: none;
     }
+    .caroussel-container{
+        margin-top: 5%;
+        height: 250px;
+    }
 }
 
 .left-btn{

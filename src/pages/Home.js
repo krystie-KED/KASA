@@ -27,7 +27,7 @@ const Home = () => {
 
 
   return(
-    <div>
+    <div className='home'>
       <Section1 />
       <div className='gallery' >
         {data && data.length>0 && data.map((data) => ( 
@@ -36,7 +36,7 @@ const Home = () => {
       </div>
     </div>    
   )
-  
+   
 }
 
 export default Home

@@ -9,8 +9,8 @@ const Tag = ({data}) => {
 
     return(
         <div className="list-tag">
-            {tags.map((tag, index) => (
-                    <div key={`${index}-${tag}`} >
+            {tags?.map((tag, index) => (
+                    <div key={`${index}-${tag}`} className="tag-container">
                         <div className="tag" >
                             <p>{tag}</p>
                         </div>

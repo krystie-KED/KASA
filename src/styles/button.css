@@ -1,14 +1,19 @@
-.button{
-   width: 10%;
-   text-align: right;
-}
 button {
     border: none;
     background-color: transparent ;
     width: 90%;
 }
-
+.button{
+   width: 10%;
+   text-align: right;
+}
 button img {
     width: 30%;
     text-align: right;
+}
+
+@media (width < 600px){
+    .button{
+        width: 20%;
+    }
 }

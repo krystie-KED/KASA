@@ -1,12 +1,20 @@
-import React from "react";
+import React from "react"
+import {Navigate} from 'react-router-dom'
 import '../styles/error.css'
+import styled from "styled-components";
+
+const StyledLinkError = styled(Navigate)`
+    font-size: 10px;
+    color: #FF6060;
+    text-decoration: none;
+`
 
 const Error = () => {
     return(
       <div className="error">
         <h1>404</h1>
         <p className="error-message">Oups! La page que vous demandez n'existe pas.</p>
-        <p className="link-retour">Retourner sur la page d’accueil</p>
+        <StyledLinkError to="/">Retourner sur la page d’accueil</StyledLinkError>  
       </div>   
     )
     
