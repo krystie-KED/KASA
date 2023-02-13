@@ -1,9 +1,9 @@
 import React from "react"
-import {Navigate} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import '../styles/error.css'
 import styled from "styled-components";
 
-const StyledLinkError = styled(Navigate)`
+const StyledLinkError = styled(Link)`
     font-size: 10px;
     color: #FF6060;
     text-decoration: none;

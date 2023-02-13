@@ -69,7 +69,7 @@
         width: 35%;
         position: absolute;
         right: 0;
-        bottom: 15%;
+        bottom: 0;
     
     }
     .logement .host p {
@@ -93,6 +93,7 @@
     
     .logement-caracteristique{
         flex-direction: column;
+        margin: 10%;
     }
     .logement-caracteristique .description{
         width: 100%;

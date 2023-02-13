@@ -44,7 +44,7 @@
 
 @media (width < 600px){
     .logement-caracteristique{
-        margin-top: 5%;
+      margin: 5% 0 0 0;
     }
     .dropdown{
         width: 100%;
