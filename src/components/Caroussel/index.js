@@ -40,6 +40,7 @@ const Carroussel = ({data}) => {
                 {pictures?.map((img, index) => (
                     <div key={`${index}-${img}`} className="caroussel-item">
                         <img src={img} alt="logement" />
+                        <p>{index +1 }/{pictures.length}</p>
                     </div>
                 ))}
             </div>
