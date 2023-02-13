@@ -29,6 +29,23 @@ const Carroussel = ({data}) => {
         setCount(c => c + delta)
     }
 
+    if(pictures?.length === 1){
+        return(
+            <div className="caroussel-container">
+                <div className="caroussel" ref={caroussel}>
+                    {pictures?.map((img, index) => (
+                        <div key={`${index}-${img}`} className="caroussel-item">
+                            <img src={img} alt="logement" />
+                            <p>{index +1 }/{pictures.length}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        )
+    }
+
+
+
     return(
         <div className="caroussel-container">
             <div className="caroussel-btn left-btn" 
