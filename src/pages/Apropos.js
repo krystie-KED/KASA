@@ -1,6 +1,7 @@
 import React from 'react'
 import Section1 from '../components/Section1ap'
-import Dropdownlarge from '../components/Dropdownlarge'
+import Dropdown from '../components/Dropdown'
+ 
 
 const Apropos = () => {
   const informations = [
@@ -13,10 +14,10 @@ const Apropos = () => {
       <div>
         <Section1 />
         <div className="dropdownLarge-container">
-            {informations.map((info, index) => (
-         <Dropdownlarge key={`${index}-${info}`} information={info}/>
-         ))}
-         </div>
+          {informations.map((info, index) => (
+            <Dropdown key={`${index}-${info}`} information={info} title={info.title} description={info.description} />
+          ))}
+        </div>
       </div>    
     )
     

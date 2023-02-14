@@ -47,10 +47,10 @@
 }
 
 .description{
-    width: 265px;
+    width: 45%;
 }
 .equipements{
-    width: 265px;
+    width: 45%;
 }
 
 @media (width < 600px){
@@ -93,9 +93,12 @@
     
     .logement-caracteristique{
         flex-direction: column;
-        margin: 10%;
+        margin-top: 5%;
     }
     .logement-caracteristique .description{
+        width: 100%;
+    }
+    .logement-caracteristique .equipements{
         width: 100%;
     }
 }

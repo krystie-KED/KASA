@@ -15,6 +15,9 @@ const StyledLink = styled(Link)`
 
 const Gallery = ({data}) => {   
     console.log(data);
+
+    
+
     return(
             <StyledLink to={`/fichelogement/${data.id}`}>
                 <div className='thumb'>

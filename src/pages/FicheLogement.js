@@ -1,18 +1,23 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useEffect , useState} from 'react'
 import '../styles/fichelogement.css'
 import Caroussel from '../components/Caroussel'
 import Tag from '../components/Tag'
 import Rate from '../components/Rate'
 import Dropdown from '../components/Dropdown'
-import Dropdownb from '../components/Dropdown/indexb'
+
+
 
 const FicheLogement = () => {
     const {id} = useParams()
-    console.log(id);
-
+    // console.log(id);
     const[data, setData]= useState([])
+    const navigate = useNavigate()
+    const equipementsLogement = data.equipments?.map((equipement, index) => {
+        return <p key={`${index}-${equipement}`}>{equipement}</p>
+    })
+    
 
     const getData = () => {
         fetch('http://localhost:3000/logements.json',
@@ -24,17 +29,29 @@ const FicheLogement = () => {
         })
         .then(res => res.json())
         .then(data => {
-            // console.log(data);
+            console.log(data);
+
+            const verif = data.find(logement => logement.id===id)
+            setData(verif)
             
-            setData(data.find(logement => logement.id===id))
-        });
+            console.log(verif);
+            if(verif === undefined){
+                console.log('okay');
+                navigate('*')
+            }
+        })    
     }
+  
+    
     useEffect(() => {
         getData()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    console.log(data);
 
+    
+    
+    
 
 
    return(
@@ -65,10 +82,10 @@ const FicheLogement = () => {
         </div>
         <div className="logement-caracteristique">
             <div className='description'> 
-            <Dropdown key={data.id} data={data} />
+                <Dropdown key={data.id} data={data} title="Description" description={data.description} />
             </div>
-            <div className='equipements'>
-            <Dropdownb key={data.id} data={data} />
+            <div className='equipements'>    
+                <Dropdown  data={data} title="Equipements" description={equipementsLogement} />
             </div>
         </div>
     </div>

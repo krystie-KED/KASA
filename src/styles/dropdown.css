@@ -1,5 +1,5 @@
 .dropdown{ 
-    width: 265px;
+    width: 100%;
     max-height: 200px;
     margin-bottom: 2%;
 }
@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     height: 26px;
+    width: 100%;
     margin-bottom: 2%;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -19,15 +20,15 @@
     -o-border-radius: 5px;
     padding: 0px 10px 0px 10px;
 }
-.description{
-    width: 265px;
+.dropdown .description{
+    width: 100%;
 }
 .dropdown .description p{
     position: relative;
     color: #FF6060;
     overflow: auto;
     max-height: 200px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
     padding: 0px 10px 0px 10px;
 
@@ -43,13 +44,8 @@
 } 
 
 @media (width < 600px){
-    .logement-caracteristique{
-      margin: 5% 0 0 0;
-    }
     .dropdown{
         width: 100%;
     }
-    .equipements{
-        width: 100%;
-    }
+    
 }
